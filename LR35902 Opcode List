@@ -1,0 +1,346 @@
+00 [NOP] 
+01 [LD BC, {nn}] X
+02 [LD (BC), A]
+03 [INC BC] X
+04 [INC B] X
+05 [DEC B] X
+06 [LD B, {n}] X
+07 [RLCA]
+08 [LD ({nn}), SP] X
+09 [ADD HL, BC] X
+0A [LD A, (BC)] X
+0B [DEC BC] X
+0C [INC C] X
+0D [DEC C] X
+0E [LD C, {n}] X
+0F [RRCA]
+10 [STOP] X
+11 [LD DE, {nn}] X
+12 [LD (DE), A]
+13 [INC DE] X
+14 [INC D] X
+15 [DEC D] X
+16 [LD D, {n}] X
+17 [RLA] X
+18 [JR {n}] X
+19 [ADD HL, DE] X
+1A [LD A, (DE)] X
+1B [DEC DE] X
+1C [INC E] X
+1D [DEC E] X
+1E [LD E, {n}] X
+1F [RRA] X
+20 [JR NZ, {n}] X
+21 [LD HL, {nn}] X
+22 [LDI (HL), A] X
+23 [INF HL] X
+24 [INC H] X
+25 [DEC H] X
+26 [LD H, {n}] X
+27 [DAA] X
+28 [JR N, {n}] X
+29 [ADD HL, HL] X
+2A [LDI A, (HL)] X
+2B [DEC HL] X
+2C [INC L] X
+2D [DEC L] X
+2E [LD L, {n}] X
+2F [CPL] X
+30 [JR NC, {n}] X
+31 [LD SP, {nn}] X
+32 [LDD (HL), A] X
+33 [INC SP] X
+34 [INC (HL)] X
+35 [DEC (HL)] X
+36 [LD (HL), {n}] X
+37 [SCF]
+38 [JR C, {n}] X
+39 [ADD HL, SP] X
+3A [LD A, (HLD)] [LD A, (HL-)] [LDD A, (HL)]
+3B [DEC SP] X
+3C [INC A]
+3D [DEC A] X
+3E [LD A, {n}] X
+3F [CCF]
+40 [LD B, B]
+41 [LD B, C]
+42 [LD B, D]
+43 [LD B, E]
+44 [LD B, H]
+45 [LD B, L]
+46 [LD B, (HL)]
+47 [LD B, A]
+48 [LD C, B]
+49 [LD C, C]
+4A [LD C, D]
+4B [LD C, E]
+4C [LD C, H]
+4D [LD C, L]
+4E [LD C, (HL)]
+4F [LD C, A]
+50 [LD D, B]
+51 [LD D, C]
+52 [LD D, D]
+53 [LD D, E]
+54 [LD D, H]
+55 [LD D, L]
+56 [LD D, (HL)]
+57 [LD D, A]
+58 [LD E, B]
+59 [LD E, C]
+5A [LD E, D]
+5B [LD E, E]
+5C [LD E, H]
+5D [LD E, L]
+5E [LD E, (HL)]
+5F [LD E, A]
+60 [LD H, B]
+61 [LD H, C]
+62 [LD H, D]
+63 [LD H, E]
+64 [LD H, H]
+65 [LD H, L]
+66 [LD H, (HL)]
+67 [LD H, A]
+68 [LD L, B]
+69 [LD L, C]
+6A [LD L, D]
+6B [LD L, E]
+6C [LD L, H]
+6D [LD L, L]
+6E [LD L, (HL)]
+6F [LD L, A]
+70 [LD (HL), B]
+71 [LD (HL), C]
+72 [LD (HL), D]
+73 [LD (HL), E]
+74 [LD (HL), H]
+75 [LD (HL), L]
+76 [HALT]
+77 [LD (HL), A]
+78 [LD A, B]
+79 [LD A, C]
+7A [LD A, D]
+7B [LD A, E]
+7C [LD A, H]
+7D [LD A, L]
+7E [LD A, (HL)]
+7F [LD A, A]
+80 [ADD A, B] X
+81 [ADD A, C] X
+82 [ADD A, D] X
+83 [ADD A, E] X
+84 [ADD A, H] X
+85 [ADD A, L] X
+86 [ADD A, (HL)] X
+87 [ADD A, A] X
+88 [ADC A, B] X
+89 [ADC A, C] X
+8A [ADC A, D] X
+8B [ADC A, E] X
+8C [ADC A, H] X
+8D [ADC A, L] X
+8E [ADC A, (HL)] X
+8F [ADC A, A] X
+90 [SUB B] X
+91 [SUB C] X
+92 [SUB D] X
+93 [SUB E] X
+94 [SUB H] X
+95 [SUB L] X
+96 [SUB (HL)] X
+97 [SUB A] X
+98 [SBC A, B] X
+99 [SBC A, C] X
+9A [SBC A, D] X
+9B [SBC A, E] X
+9C [SBC A, H] X
+9D [SBC A, L] X
+9E [SBC A, (HL)] X
+9F [SBC A, A] X
+AO [AND B] X
+A1 [AND C] X
+A2 [AND D] X
+A3 [AND E] X
+A4 [AND H] X
+A5 [AND L] X
+A6 [AND (HL)] X
+A7 [AND A] X
+A8 [XOR B] X
+A9 [XOR C] X
+AA [XOR D] X
+AB [XOR E] X
+AC [XOR H] X
+AD [XOR L] X
+AE [XOR (HL)] X
+AF [XOR A] X
+B0 [OR B] X
+B1 [OR C] X
+B2 [OR D] X
+B3 [OR E] X
+B4 [OR H] X
+B5 [OR L] X
+B6 [OR (HL)] X
+B7 [OR A] X
+B8 [CP B] X
+B9 [CP C] X
+BA [CP D] X
+BB [CP E] X
+BC [CP H] X
+BD [CP L] X
+BE [CP (HL)] X
+BF [CP A] X
+C0 [RET NZ] X
+C1 [POP BC] X
+C2 [JP NZ, ({nn})] X
+C3 [JP ({nn})] X
+C4 [CALL NZ, {nn}] X
+C5 [PUSH BC] X
+C6 [ADD A, {n}] X
+C7 [RST 00H] X
+C8 [RET Z] X
+C9 [RET] X
+CA [JP Z, ({nn})] X
+CB
+	00 [RLC B] X
+	01 [RLC C] X
+	02 [RLC D] X
+	03 [RLC E] X
+	04 [RLC H] X
+	05 [RLC L] X
+	06 [RLC (HL)] X
+	07 [RLC A] X
+	08 [RRC B] X
+	09 [RRC C] X
+	0A [RRC D] X
+	0B [RRC E] X
+	0C [RRC H] X
+	0D [RRC L] X
+	0E [RRC (HL)] X
+	0F [RRC A] X
+	10 [RL B] X
+	11 [RL C] X
+	12 [RL D] X
+	13 [RL E] X
+	14 [RL H] X
+	15 [RL L] X
+	16 [RL (HL)] X
+	17 [RL A] X
+	18 [RR B] X
+	19 [RR C] X
+	1A [RR D] X
+	1B [RR E] X
+	1C [RR H] X
+	1D [RR L] X
+	1E [RR (HL)] X
+	1F [RR A]
+	20 [SLA B] X
+	21 [SLA C] X
+	22 [SLA D] X
+	23 [SLA E] X
+	24 [SLA H] X
+	25 [SLA L] X
+	26 [SLA (HL)] X
+	27 [SLA A] X
+	28 [SRA B] X
+	29 [SRA C] X
+	2A [SRA D] X
+	2B [SRA E] X
+	2C [SRA H] X
+	2D [SRA L] X
+	2E [SRA (HL)] X
+	2F [SRA A]
+	30 [SWAP B]
+	31 [SWAP C]
+	32 [SWAP D]
+	33 [SWAP E]
+	34 [SWAP H]
+	35 [SWAP L]
+	36 [SWAP (HL)] X
+	37 [SWAP A]
+	38 [SRL B] X
+	39 [SRL C] X
+	3A [SRL D] X
+	3B [SRL E] X
+	3C [SRL H] X
+	3D [SRL L] X
+	3E [SRL (HL)] X
+	3F [SRL A] X
+	40 [BIT b, B] X
+	41 [BIT b, C] X
+	42 [BIT b, D] X
+	43 [BIT b, E] X
+	44 [BIT b, H] X
+	45 [BIT b, L] X
+	46 [BIT b, (HL)] X
+	47 [BIT b, A] X
+	
+	80 [RES b, B] X
+	81 [RES b, C] X
+	82 [RES b, D] X
+	83 [RES b, E] X
+	84 [RES b, H] X
+	85 [RES b, L] X
+	86 [RES b, (HL)] X
+	87 [RES b, A] X
+	
+	C0 [SET b, B] X
+	C1 [SET b, C] X
+	C2 [SET b, D] X
+	C3 [SET b, E] X
+	C4 [SET b, H] X
+	C5 [SET b, L] X
+	C6 [SET b, (HL)] X
+	C7 [SET b, A] X
+CC [CALL Z, {nn}] X
+CD [CALL {nn}] X
+CE [ADC A, {n}] X
+CF [RST 08H] X
+D0 [RET NC] X
+D1 [POP DE] X
+D2 [JP NC ({nn})] X
+D3 <NONE>
+D4 [CALL NC, {nn}] X
+D5 [PUSH DE] X
+D6 [SUB {n}] X
+D7 [RST 10H] X
+D8 [RET C] X
+D9 [RETI] X
+DA [JP C ({nn})] X
+DB <NONE>
+DC [CALL C, {nn}] X
+DD <NONE>
+DE [SBC A, {n}] X
+DF [RST 18H] X
+E0 [LD ($FF00+{n}), A] X
+E1 [POP HL] X
+E2 [LD (C), A] X		$FF00 + C = A
+E3 <NONE>
+E4 <NONE>
+E5 [PUSH HL] X
+E6 [AND {n}] X
+E7 [RST 20H] X
+E8 [ADD SP, {n}] X
+E9 [JP (HL)] X
+EA [LD ({nn}), A] X
+EB <NONE>
+EC <NONE>
+ED <NONE>
+EE [XOR {n}] X
+EF [RST 28H] X
+F0 [LD A, ($FF00+{n})] X
+F1 [POP AF] X
+F2 [LD A, (C)] X		A = $FF00 + C
+F3 [DI] X
+F4 <NONE>
+F5 [PUSH AF] X
+F6 [OR {n}] X
+F7 [RST 30H] X
+F8 [LDHL SP, {n}] X
+F9 [LD SP, HL] X
+FA [LD A, {nn}] X
+FB [EI] X
+FC <NONE>
+FD <NONE>
+FE [CP {n}] X
+FF [RST 38H] X

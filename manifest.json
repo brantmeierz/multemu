@@ -1,0 +1,17 @@
+{
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "manifest_version": 2,
+  "name": "MultEmu",
+  "version": "1.0",
+  
+  "description": "A suite of emulators written in Javascript to run on Chrome, offline.",
+  "icons": { "16": "multemu-16.png", "128": "multemu-128.png" },
+  
+  "author": "devbrantmeier",
+  "offline_enabled": true,
+  "short_name": "MultEmu"
+}

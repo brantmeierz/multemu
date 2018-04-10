@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="z80.js"></script>
+		<script type="text/javascript" src="windowcontrol.js"></script>
+	</head>
+	<body>
+		<!-- Display screen -->
+		<div id="screenview">
+			<ul>
+				<li id="device" title="Choose a processor/device type">
+					Choose a processor:
+					<select>
+						<option value="lr35902">LR35902 (GB)</option>
+						<option value="xx">(GBP)</option>
+						<option value="xx">(GBC)</option>
+						<option value="xx">(SGB)</option>
+					</select>
+				</li>
+				<li id="loadrom" title="Load a ROM file"><input type="file" value="Load File"/></li>
+				<li id="savedata" title="Save running data">Save Data</li>
+				<li id="reboot" title="Reboot the device">Reboot</li>
+				<li id="screensize" title="Change screen size">
+					Screen Size:
+					<select>
+						<option value="400x400">400x400px</option>
+						<option value="800x600">800x600px</option>
+						<option value="1600x1200">1600x1200px</option>
+					</select>
+				</li>
+			</ul>
+			<canvas width="600" height="300">Your browser does not support the HTML canvas element</canvas>
+		</div>
+	</body>
+</html>

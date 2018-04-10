@@ -1,0 +1,33 @@
+body {
+	background-color: #333344;	
+}
+
+ul {
+	list-style-type: none;
+	background-color: #000033;
+	width: 100vw;
+	overflow: auto;
+	padding: 2px;
+}
+
+li {
+	float: left;
+	display: inline;
+	padding: 10px;
+	margin: 1px;
+	color: #FFFFFF;
+	font-size: 15pt;
+	background-color: #000077;
+	height: 100%;
+	transition: 0.5s;
+}
+
+li:hover {
+	color: #000000;
+	background-color: #AAAACC;
+}
+
+li:active {
+	color: #7777FF;
+	background-color: #666688;
+}
